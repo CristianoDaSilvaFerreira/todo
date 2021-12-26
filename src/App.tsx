@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import * as AppStyles from './App.styles';
+import ListItem from './components/ListItem';
 import { Item } from './types/Item';
 
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
     {
       id: 2,
       name: 'Compra um bolo na padaria',
-      done: false
+      done: true
     },
   ]);
   return(
@@ -24,7 +25,7 @@ const App = () => {
 
         {/* Lista de tarefas */}
         {list.map((item, index) =>(
-          <div>{item.name}</div>
+          <ListItem key={index} item={item}/>
         ))}
       </AppStyles.Area>
     </AppStyles.Container>

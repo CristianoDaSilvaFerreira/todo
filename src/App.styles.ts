@@ -10,7 +10,7 @@ export const Area = styled.div`
     margin: auto;
     max-width: 980px;
     padding: 0.625rem;
-`;
+    `;
 
 export const Header = styled.h1`
     margin: 0;
@@ -19,4 +19,5 @@ export const Header = styled.h1`
     text-align: center;
     border-bottom: 1px solid #444;
     padding-bottom: 1.25rem;
+    margin-bottom: 0.5rem;
 `;
